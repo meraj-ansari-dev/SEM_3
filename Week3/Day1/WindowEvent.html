@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Window</title>
+
+    <script>
+        var a;
+
+        function openWindow() {
+            a = window.open(
+                "https://www.abes.ac.in/",
+                "_blank",
+                "height=350,width=500"
+            );
+            a.document.write("<p>this is my new window with moveTo and moveBy event </p>");
+        }
+
+        function moveWindow() {
+            a.moveTo(200,300);
+            a.focus();
+        }
+    </script>
+</head>
+
+<body>
+
+    <button onclick="openWindow()">Open New Window</button>
+    <button onclick="moveWindow()">Close New Window</button>
+
+</body>
+</html>

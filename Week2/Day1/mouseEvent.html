@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseEvent</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            margin: auto;
+        }
+    </style>
+    <script>
+        function eventCall(){
+            alert("this is mouse Event");
+        }
+        function bgColourChange(){
+
+        }
+    </script>
+</head>
+<body>
+    <div id="box" onmouseover="eventCall()"></div>
+    <p id="para"></p>
+    <button id="button" style="color: aqua; font-size:medium;  display: flex;
+  justify-content: center;">click Me</button>
+</body>
+</html>

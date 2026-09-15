@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyboard Events</title>
+
+    <style>
+        .box {
+            width: 250px;
+            background-color: lightgreen;
+            padding: 25px;
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 220px;
+            padding: 8px;
+            margin: 8px 0;
+        }
+    </style>
+
+    <script>
+        function down() {
+            let color = document.getElementById("color").value;
+            document.querySelector(".box").style.backgroundColor = color;
+        }
+
+        function up() {
+            console.log("Key Up");
+        }
+
+        function press() {
+            console.log("Key Press");
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h2>Keyboard Events</h2>
+
+    <input type="text"
+           id="color"
+           placeholder="Type a color"
+           onkeydown="down()"
+           onkeyup="up()"
+           onkeypress="press()">
+
+    <input type="text" placeholder="Enter name">
+
+    <input type="text" placeholder="Enter email">
+
+</div>
+
+</body>
+</html>
