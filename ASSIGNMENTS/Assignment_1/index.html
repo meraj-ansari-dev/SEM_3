@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FSD Quiz Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container" id="startPage">
+
+        <h1>FSD QUIZ</h1>
+
+        <div class="form-box">
+
+            <h2>Student Details</h2>
+
+            <!-- Student Name -->
+            <label for="studentName">
+                Student Name
+            </label>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+            >
+
+
+            <!-- Roll Number -->
+            <label for="rollNumber">
+                Student Roll No.
+            </label>
+
+            <input
+                type="text"
+                id="rollNumber"
+                placeholder="Enter your roll number"
+            >
+
+
+            <!-- Section -->
+            <label>
+                Choose Your Section
+            </label>
+
+            <div class="section-options">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="section"
+                        value="A"
+                    >
+                    A
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="section"
+                        value="B"
+                    >
+                    B
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="section"
+                        value="C"
+                    >
+                    C
+                </label>
+
+            </div>
+
+
+            <!-- Start Button -->
+            <button id="startBtn">
+                Start Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    
+
+    <div class="container quiz-page" id="quizPage">
+
+        <div class="quiz-box">
+
+            <h1>FSD QUIZ</h1>
+
+            <!-- Student information -->
+            <div class="student-info">
+
+                <span id="displayName"></span>
+
+                <span id="displayRoll"></span>
+
+                <span id="displaySection"></span>
+
+            </div>
+
+
+            <!-- Question number -->
+            <h2 id="questionNumber">
+                Question 1
+            </h2>
+
+
+            <!-- Question -->
+            <h3 id="questionText">
+                Question will appear here
+            </h3>
+
+
+            <!-- Options -->
+            <div id="optionsContainer">
+
+                <!-- JavaScript will add options here -->
+
+            </div>
+
+
+            <!-- Navigation buttons -->
+            <div class="buttons">
+
+                <button id="previousBtn">
+                    Previous
+                </button>
+
+                <button id="nextBtn">
+                    Next
+                </button>
+
+                <button id="submitBtn">
+                    Submit Quiz
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         RESULT PAGE
+    ========================== -->
+
+    <div class="container result-page" id="resultPage">
+
+        <div class="result-box">
+
+            <h1>Quiz Completed!</h1>
+
+            <h2 id="resultName"></h2>
+
+            <p id="resultScore"></p>
+
+            <button id="restartBtn">
+                Restart Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
